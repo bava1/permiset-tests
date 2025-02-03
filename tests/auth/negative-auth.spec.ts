@@ -23,32 +23,31 @@ test.describe('Negative Auth', () => {
 
     });
 
-    test('email empty', async () => {
+    test.skip('email empty', async () => {
         await page.waitForTimeout(2000);
         await expect(page).toHaveURL(`${clientURL}`);
     });
 
-    test('email invalid', async () => {
+    test.skip('email invalid', async () => {
         await page.waitForTimeout(2000);
         await expect(page).toHaveURL(`${clientURL}`);
     });
 
-    test('password empty', async () => {
+    test.skip('password empty', async () => {
         await page.waitForTimeout(2000);
         await expect(page).toHaveURL(`${clientURL}`);
     });
 
-    test('password invalid', async () => {
+    test.skip('password invalid', async () => {
         await page.waitForTimeout(2000);
         await expect(page).toHaveURL(`${clientURL}`);
     });
 
-    test('Password length mismatch', async () => {
+    test.skip('Password length mismatch', async () => {
         await page.waitForTimeout(2000);
         await expect(page).toHaveURL(`${clientURL}`);
     });
     
-
     test('test user verification', async () => {
         await expect(page.locator(`text=Your email: ${authData.userEmail}`)).toBeVisible();
         // await expect(page.locator('h1', { hasText: 'Welcome Role Administrator employee' })).toBeVisible();

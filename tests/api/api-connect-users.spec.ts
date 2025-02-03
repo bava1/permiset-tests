@@ -23,7 +23,6 @@ test.describe('Permiset API', () => {
     });
 
     expect(response.ok()).toBeTruthy();
-
     const responseData = await response.json();
     token = responseData.token;
     expect(token).toBeDefined();
@@ -66,11 +65,6 @@ test.describe('Permiset API', () => {
           "status": "active"
       },
     });
-
-    //expect(response2.ok()).toBeTruthy();
-
-    //const respon = await response2.json();
-
   });
 
   test.skip('get users list 2', async () => {

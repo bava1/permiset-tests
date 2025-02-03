@@ -1,6 +1,6 @@
 import { test, expect, BrowserContext, Page, APIRequestContext } from '@playwright/test';
 
-test.describe('Positive Auth', () => {
+test.describe('@smoke Positive Auth', () => {
     let context: BrowserContext;
     // let request: APIRequestContext;
     let apiResponse: any;
